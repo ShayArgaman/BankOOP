@@ -233,7 +233,7 @@ public class ClientDAO {
      * Checks if a client exists using provided connection.
      * This is the actual implementation that works with the database.
      */
-    public static boolean clientExists(Connection conn, int clientId) throws SQLException {
+  b boolean clientExists(Connection conn, int clientId) throws SQLException {
         PreparedStatement pstmt = null;
         ResultSet rs = null;
         try {

@@ -174,7 +174,7 @@ public class ClientDAO {
      * Adds a new client to the database using provided connection.
      * This is the actual implementation that works with the database.
      */
-    public static Client addClient(Connection conn, Client newClient) throws SQLException {
+    static Client addClient(Connection conn, Client newClient) throws SQLException {
         if (newClient.getId() != -1) {
             throw new IllegalArgumentException("Client already has a database ID: " + newClient.getId());
         }
@@ -233,7 +233,7 @@ public class ClientDAO {
      * Checks if a client exists using provided connection.
      * This is the actual implementation that works with the database.
      */
-    public static boolean clientExists(Connection conn, int clientId) throws SQLException {
+    static boolean clientExists(Connection conn, int clientId) throws SQLException {
         PreparedStatement pstmt = null;
         ResultSet rs = null;
         try {
@@ -325,7 +325,7 @@ public class ClientDAO {
      * Checks if a client is associated with any account using provided connection.
      * This is used for safe-destructive delete operations.
      */
-    public static boolean isClientAssociatedWithAnyAccount(Connection conn, int clientId) throws SQLException {
+    static boolean isClientAssociatedWithAnyAccount(Connection conn, int clientId) throws SQLException {
         PreparedStatement pstmt = null;
         ResultSet rs = null;
         

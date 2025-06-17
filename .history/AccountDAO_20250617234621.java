@@ -283,7 +283,7 @@ public class AccountDAO {
      * Retrieves a specific account by its account number using provided connection.
      * Uses the v_all_account_details VIEW for optimized performance.
      */
-    public static Account getAccountByNumber(Connection conn, int accountNumber) throws SQLException {
+    static Account getAccountByNumber(Connection conn, int accountNumber) throws SQLException {
         PreparedStatement pstmt = null;
         ResultSet rs = null;
         Account account = null;
@@ -409,7 +409,7 @@ public class AccountDAO {
     /**
      * Associates a client with an account using provided connection.
      */
-    public static void addClientToAccount(Connection conn, int accountId, int clientId) throws SQLException {
+    static void addClientToAccount(Connection conn, int accountId, int clientId) throws SQLException {
         PreparedStatement pstmt = null;
         ResultSet rs = null;
         
@@ -561,7 +561,7 @@ public class AccountDAO {
     /**
      * Removes a client from an account using provided connection.
      */
-    public static boolean removeClientFromAccount(Connection conn, int accountId, int clientId) throws SQLException {
+    static boolean removeClientFromAccount(Connection conn, int accountId, int clientId) throws SQLException {
         PreparedStatement pstmt = null;
         boolean success = false;
 

@@ -2,6 +2,9 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 
+import .history.AccountDAO;
+import .history.ClientDAO;
+import .history.DatabaseManager;
 
 /**
  * Bank class implementing the Unit of Work pattern with enhanced database operations.
