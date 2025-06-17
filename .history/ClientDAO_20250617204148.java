@@ -252,7 +252,7 @@ public class ClientDAO {
      * Retrieves all clients associated with a specific account using provided connection.
      * This is the actual implementation that works with the database.
      */
-    public static List<Client> getClientsForAccount(Connection conn, int accountId) throws SQLException {
+    private static List<Client> getClientsForAccount(Connection conn, int accountId) throws SQLException {
         PreparedStatement pstmt = null;
         ResultSet rs = null;
         List<Client> clients = new ArrayList<>();

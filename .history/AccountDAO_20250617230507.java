@@ -224,7 +224,7 @@ public class AccountDAO {
      * Retrieves all accounts from the database using provided connection.
      * Uses the v_all_account_details VIEW for optimized performance.
      */
-    public static List<Account> getAllAccounts(Connection conn) throws SQLException {
+    private static List<Account> getAllAccounts(Connection conn) throws SQLException {
         PreparedStatement pstmt = null;
         ResultSet rs = null;
         List<Account> accounts = new ArrayList<>();
