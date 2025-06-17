@@ -1,0 +1,20 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\User\\OneDrive - Afeka College Of Engineering\\Documents\\מדעי המחשב\\שנה ג\\סמסטר ב\\בסיסי נתונים\\SQL\\java\\postgresql-42.7.5.jar",
+        "c:\\Users\\User\\OneDrive - Afeka College Of Engineering\\Documents\\מדעי המחשב\\שנה ג\\סמסטר ב\\בסיסי נתונים\\SQL\\תרגול חיבור ל JAVA\\java\\postgresql-42.7.5.jar"
+    ],
+
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/.history": true  
+    },
+    "search.exclude": {
+        "**/.history": true 
+    }
+}
