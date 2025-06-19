@@ -69,6 +69,3 @@ Make sure you have the following software installed:
     * Ensure the PostgreSQL JDBC driver is included in your project's build path/classpath.
     * Run the `Main.java` file to start the application's command-line interface.
 
----
-
-## 📂 Project Structure
