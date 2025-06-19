@@ -97,19 +97,11 @@ BEGIN
             NEW.rank_value,
             CURRENT_TIMESTAMP
         );
-        
-        -- Log the change for debugging (optional)
-        RAISE NOTICE 'Client rank change logged: Client ID %, Old Rank %, New Rank %', 
-            NEW.client_id, OLD.rank_value, NEW.rank_value;
     END IF;
-    
     -- Return NEW to allow the update to proceed
     RETURN NEW;
 END;
 $$ LANGUAGE plpgsql;
-
--- Add comment to document the function's purpose
-COMMENT ON FUNCTION log_client_rank_change() IS 'Trigger function that logs client rank changes to the audit table';
 
 -- Create the trigger that calls the function after UPDATE operations
 CREATE OR REPLACE TRIGGER trigger_client_rank_audit

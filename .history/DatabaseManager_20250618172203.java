@@ -7,7 +7,9 @@ import java.sql.SQLException;
 /**
  * DatabaseManager class using Singleton design pattern to manage PostgreSQL database connections.
  * This class provides a centralized way to establish database connections and clean up resources.
- *
+ * 
+ * @author Your Name
+ * @version 1.0
  */
 public class DatabaseManager {
     
