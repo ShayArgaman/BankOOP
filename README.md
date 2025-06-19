@@ -43,7 +43,7 @@ Make sure you have the following software installed:
 
 1.  **Clone the Repository**
     ```sh
-    git clone <your-repository-url>
+    git clone https://github.com/ShayArgaman/BankOOP.git
     ```
 
 2.  **🗄️ Database Setup**
