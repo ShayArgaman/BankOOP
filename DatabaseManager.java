@@ -15,9 +15,9 @@ public class DatabaseManager {
     private static DatabaseManager instance;
     
     // Database connection configuration - UPDATE THESE VALUES FOR YOUR ENVIRONMENT
-    private static final String DB_URL = "jdbc:postgresql://localhost:5433/bank_project_db";
+    private static final String DB_URL = "jdbc:postgresql://localhost:5433/bank_project_db";  //// #################### ENTER HERE YOUR PORT of postgresql ####################
     private static final String DB_USERNAME = "postgres";
-    private static final String DB_PASSWORD = "sa8294";
+    private static final String DB_PASSWORD = "";     //// #################### ENTER HERE YOUR PASSWORD ####################
     private static final String DB_DRIVER = "org.postgresql.Driver";
     
     /**
